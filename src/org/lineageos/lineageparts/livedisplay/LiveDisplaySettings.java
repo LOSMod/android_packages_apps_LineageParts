@@ -222,8 +222,8 @@ public class LiveDisplaySettings extends SettingsPreferenceFragment implements S
         }
 
         mReadingMode = findPreference(KEY_LIVE_DISPLAY_READING_ENHANCEMENT);
-        if (liveDisplayPrefs != null && mReadingMode != null 
-                && !mHardware.isSupported(LineageHardwareManager.FEATURE_READING_ENHANCEMENT)) {
+        if (liveDisplayPrefs != null && mReadingMode != null &&
+                !mHardware.isSupported(LineageHardwareManager.FEATURE_READING_ENHANCEMENT)) {
             liveDisplayPrefs.removePreference(mReadingMode);
             mReadingMode = null;
         } else {
